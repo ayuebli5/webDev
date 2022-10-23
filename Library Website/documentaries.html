@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Documentaries</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- new scripts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <!-- new scripts -->
+
+    <!-- footer Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fontawesome-->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- footer Scripts end -->
+
+    <link rel="stylesheet" href="./test.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-default navbar-expand-lg navbar-light sticky">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Asmara<b>Library</b></a>
+        <button
+          type="button"
+          data-target="#navbarCollapse"
+          data-toggle="collapse"
+          class="navbar-toggle"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collection of nav links, forms, and other content for toggling -->
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#"
+              >Fiction <b class="caret"></b
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="fiction.html">Childrens</a></li>
+              <li><a href="fiction.html">Classic</a></li>
+
+              <li><a href="fiction.html">Science Fiction</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#"
+              >Non-Fiction <b class="caret"></b
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="nonfiction.html">Biography</a></li>
+
+              <li><a href="nonfiction.html">Self-help</a></li>
+            </ul>
+          </li>
+
+          <li><a href="documentaries.html">Documentaries</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+        <form class="navbar-form form-inline">
+          <div class="input-group search-box">
+            <input
+              type="text"
+              id="search"
+              class="form-control"
+              placeholder="Search here..."
+            />
+            <span class="input-group-addon"
+              ><i class="material-icons">&#xE8B6;</i></span
+            >
+          </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Login</a>
+            <ul class="dropdown-menu form-wrapper">
+              <li>
+                <form action="/examples/actions/confirmation.php" method="post">
+                  <p class="hint-text">
+                    Sign in with your social media account
+                  </p>
+                  <div class="form-group social-btn clearfix">
+                    <a href="#" class="btn btn-primary pull-left"
+                      ><i class="fa fa-facebook"></i> Facebook</a
+                    >
+                    <a href="#" class="btn btn-info pull-right"
+                      ><i class="fa fa-twitter"></i> Twitter</a
+                    >
+                  </div>
+                  <div class="or-seperator"><b>or</b></div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Username"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="Password"
+                      required="required"
+                    />
+                  </div>
+                  <input
+                    type="submit"
+                    class="btn btn-primary btn-block"
+                    value="Login"
+                  />
+                  <div class="form-footer">
+                    <a href="#">Forgot Your password?</a>
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="#"
+              data-toggle="dropdown"
+              class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1"
+              >Sign up</a
+            >
+            <ul class="dropdown-menu form-wrapper">
+              <li>
+                <form action="/examples/actions/confirmation.php" method="post">
+                  <p class="hint-text">
+                    Fill in this form to create your account!
+                  </p>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Username"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="Password"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="Confirm Password"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="checkbox-inline"
+                      ><input type="checkbox" required="required" /> I accept
+                      the <a href="#">Terms &amp; Conditions</a></label
+                    >
+                  </div>
+                  <input
+                    type="submit"
+                    class="btn btn-primary btn-block"
+                    value="Sign up"
+                  />
+                </form>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <label class="switch">
+          <input
+            id="dark-mode"
+            title="dark mode"
+            alt="Dark mode button"
+            type="checkbox"
+            onclick="document.     documentElement.classList.toggle('dark-mode')"
+          />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="fiction.html">Fiction</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          The White Helmets
+        </li>
+      </ol>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services button1">
+      <div class="container button2">
+        <div class="section-title">
+          <h2>Documentaries</h2>
+          <p>The white Helmets</p>
+        </div>
+
+        <div class="row button3">
+          <div class="col-lg-4 col-md-6 button4">
+            <div class="col-lg-8 col-md-6">
+              <div class="icon-box">
+                <h4 class="title">The White Helmets</h4>
+                <p>Orlando von Einsiedel</p>
+                <p class="description">
+                  <img src="./Image/thewhitehelmet.png" alt="" />
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 button5">
+              <a
+                href="https://www.youtube.com/watch?v=fQM6t1oSQkE"
+                class="btn-learn-more button6"
+                >Watch</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-6">
+            <div class="icon-box">
+              <h4 class="title">
+                The White Helmets<span>(Orlando von Einsiedel)</span>
+              </h4>
+              <p class="description">
+                The White Helmets comprise an unarmed, neutral organization of
+                more than 3,000 volunteer rescue workers operating in
+                opposition-held areas of Syria. When airstrikes rain down on
+                civilian targets in the war-torn nation, the men and women of
+                the White Helmets carry out search-and-rescue operations to save
+                as many lives as possible.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <!-- second documentary -->
+        <div class="section-title">
+          <h2>Documentaries</h2>
+          <p>Shnzen: The silicon Valley of Hardware</p>
+        </div>
+
+        <div class="row button3">
+          <div class="col-lg-4 col-md-6 button4">
+            <div class="col-lg-8 col-md-6">
+              <div class="icon-box">
+                <h4 class="title">Shnzen</h4>
+                <p>Jim Demuth</p>
+                <p class="description">
+                  <img src="./Image/shenzen.png" alt="" />
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 button5">
+              <a
+                href="https://www.youtube.com/watch?v=SGJ5cZnoodY"
+                class="btn-learn-more button6"
+                >Watch</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-6">
+            <div class="icon-box">
+              <h4 class="title">Shnzen<span>(Jim Demuth)</span></h4>
+              <p class="description">
+                The center of the technology world may not lie in California's
+                Silicon Valley, but in the bustling marketplace of Huaqiangbei,
+                a subdistrict of Shenzhen in China. This is where curious
+                consumers and industry insiders gather to feast their eyes and
+                wallets on the latest software, hardware, gadgetry, and assorted
+                electronic goods. It's also the setting for the new documentary
+                from WIRED UK titled Shenzhen: The Silicon Valley of Hardware.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <!-- Third Documentary -->
+        <div class="section-title">
+          <h2>Documentaries</h2>
+          <p>The white Helmets</p>
+        </div>
+
+        <div class="row button3">
+          <div class="col-lg-4 col-md-6 button4">
+            <div class="col-lg-8 col-md-6">
+              <div class="icon-box">
+                <h4 class="title">The White Helmets</h4>
+                <p>Orlando von Einsiedel</p>
+                <p class="description">
+                  <img src="./Image/ourplanet.png" alt="" />
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 button5">
+              <a
+                href="https://www.youtube.com/watch?v=aETNYyrqNYE&list=PL7rb3uMaYmjHqT_JUcQYCBa4nEtfDKuSa"
+                class="btn-learn-more button6"
+                >Watch</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-6">
+            <div class="icon-box">
+              <h4 class="title">Our Planet<span>(David Attenborough)</span></h4>
+              <p class="description">
+                Our Planet is a global event that reminds us we're all on one
+                team. The upcoming series from Our Planet Netflix—created in
+                collaboration with Silverback Productions and WWF—features
+                jaw-dropping nature stories, grounded in the best science, and
+                highlighting the most pressing challenges facing nature today.
+                The eight-part original documentary series will be released
+                globally on Netflix April 5, 2019. Voiced by Sir David
+                Attenborough, the series will showcase the world’s incredible
+                species and most at-risk habitats in ways they have never been
+                seen before—from ice caps and deep ocean to deserts and remote
+                forests.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- Contact Us -->
+    <section id="contactus" class="">
+      <div class="container contactus">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>More Info</p>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="100%"
+                  height="350px"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=zayed%20university%20abu%20dhabi&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://embedgooglemap.net/mapv2/"></a>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="col-md-6">
+            <form class="my-form">
+              <div class="form-group">
+                <label for="form-name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="form-name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="form-email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="form-subject">Telephone</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="form-subject"
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="form-group">
+                <label for="form-message">Email your Message</label>
+                <textarea
+                  class="form-control"
+                  id="form-message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <p>
+                <button class="btn btn-default" type="submit">
+                  Contact Us
+                </button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us End -->
+
+    <!-- Footer -->
+
+    <!-- footer -->
+    <footer style="background-color: #8c948d63">
+      <div class="container footel">
+        <div class="row">
+          <div class="col-md-4 text-center text-md-left">
+            <div class="py-0">
+              <h3 class="my-4 text-white">
+                Asmara<span class="mx-2 font-italic text-warning">Library</span>
+              </h3>
+
+              <p class="footer-links font-weight-bold">
+                <a class="text-white" href="/index.html#home">Home</a>
+                |
+                <a class="text-white" href="/index.html#about">About</a>
+                |
+                <a class="text-white" href="/index.html#services">Services</a>
+                |
+                <a class="text-white" href="/index.html#contactus">Contact</a>
+              </p>
+              <p class="text-light py-4 mb-4">
+                &copy;2020 Asmara Library Pvt. Ltd.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-white text-center text-md-left">
+            <div class="py-2 my-4">
+              <div>
+                <p class="text-white">
+                  <i class="fa fa-map-marker mx-2"></i> Abu Dhabi - Sweihan - Al
+                  Hayer Rd - Zayed CityKhalifa City C - Abu Dhabi
+                </p>
+              </div>
+
+              <div>
+                <p><i class="fa fa-phone mx-2"></i> +971 22-277821</p>
+              </div>
+              <div>
+                <p>
+                  <i class="fa fa-envelope mx-2"></i
+                  ><a href="mailto:support@eduonix.com"
+                    >AsmaraLibrary@example.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-white my-4 text-center text-md-left">
+            <span class="font-weight-bold">About the Library</span>
+            <p class="text-warning my-2">
+              Asmara Library is a modern library located at the heart of Khalifa
+              City, Abu Dhabi. It is the number one go to destination of all the
+              residents of Khalifa city when it comes to things related to
+              books.
+            </p>
+            <div class="py-2">
+              <a href="https://www.facebook.com/asmara.libra.5"
+                ><i class="fab fa-facebook fa-2x text-primary mx-3"></i
+              ></a>
+              <a href="https://twitter.com/home"
+                ><i class="fab fa-twitter fa-2x text-info mx-3"></i
+              ></a>
+              <a href="https://www.youtube.com/"
+                ><i class="fab fa-youtube fa-2x text-danger mx-3"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+    <!-- Footer End -->
+  </body>
+</html>
